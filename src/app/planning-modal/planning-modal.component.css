@@ -1,0 +1,75 @@
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    background-color: #3f51b5;
+    color: white;
+}
+  
+.close-button {
+    color: white;
+}
+  
+.modal-title {
+    margin: 0;
+    font-size: 20px;
+}
+  
+.modal-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #e3f2fd;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: right;
+    background-color: #e3f2fd; /* Léger contraste pour le footer */
+}
+  
+.full-width {
+    width: 100%;
+}
+  
+.file-upload button {
+    margin-top: 8px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+  
+.file-label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+  
+.file-input {
+    display: none; /* Cache l'élément input réel */
+}
+  
+
+.download-example {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1976d2;
+    cursor: pointer;
+  }
+  .download-example a {
+    text-decoration: underline;
+    color: inherit;
+  }
+  .download-example mat-icon {
+    font-size: 16px;
+  }
+  

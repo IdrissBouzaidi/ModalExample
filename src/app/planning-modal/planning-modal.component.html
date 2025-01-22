@@ -1,0 +1,37 @@
+<div class="modal-header">
+    <h2 class="modal-title">Nouveau planning</h2>
+    <button mat-icon-button class="close-button" (click)="closeModal()">
+      <mat-icon>close</mat-icon>
+    </button>
+</div>
+<div class="modal-body">
+    <!-- Champ pour "Nom du planning" -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nom du planning</mat-label>
+      <input matInput [(ngModel)]="planningName" />
+    </mat-form-field>
+  
+    <!-- Champ pour "Fichier planning" -->
+    <div class="file-upload">
+      <label for="fileInput" class="file-label">Fichier planning</label>
+      <input
+        #fileInput
+        type="file"
+        (change)="onFileSelected($event)"
+        class="file-input"
+      />
+      <button mat-raised-button color="primary" (click)="fileInput.click()">
+        Choisir un fichier
+      </button>
+    </div>
+
+    <div class="download-example">
+        <a (click)="downloadExample()">Télécharger un exemple</a>
+        <mat-icon>file_download</mat-icon>
+    </div>
+
+    <div class="modal-footer">
+        <button mat-raised-button color="primary" (click)="savePlanning()">Importer</button>
+    </div>
+</div>
+  
